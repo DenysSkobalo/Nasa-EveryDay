@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
-import {NasaService} from './../../services/nasa.service';
 import {FormControl, FormGroup} from '@angular/forms';
+
+import {NasaService} from './../../services/nasa.service';
 
 @Component({
   selector: 'app-form',
@@ -15,7 +16,7 @@ export class FormComponent {
   }
 
   public submitDate(dateInput: HTMLInputElement) {
-    let date: any = this.form.value?.date;
+    let date: any = this.form.value!.date;
     this.nasaService.setNewDate(date);
   }
 }

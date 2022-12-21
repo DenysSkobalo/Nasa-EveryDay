@@ -8,5 +8,6 @@ import {ModalService} from "../../services/modal.service";
 export class ModalComponent {
   @Input() title: string;
 
-  constructor(public modalService: ModalService) {}
+  constructor(public modalService: ModalService) {
+  }
 }

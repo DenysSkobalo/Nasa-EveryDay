@@ -1,6 +1,7 @@
-import {BehaviorSubject, Observable, switchMap,} from 'rxjs';
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {BehaviorSubject, Observable, switchMap,} from 'rxjs';
+
 import {environment} from "../../environment/environment";
 
 @Injectable({
@@ -11,7 +12,8 @@ export class NasaService {
   private selectedDateObservable = this.selectedDate.asObservable();
   private apiKey = environment.NASA_KEY;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  }
 
   ngOnInit(): void {
     this.getNasaData();
@@ -22,7 +24,6 @@ export class NasaService {
   }
 
   getNasaData(): Observable<any> {
-
     const year = new Date().getFullYear();
     const month = new Date().getMonth() + 1;
     const day = new Date().getDate();

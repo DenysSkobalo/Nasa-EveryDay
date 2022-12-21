@@ -8,4 +8,3 @@ export interface NasaData {
   title:string;
   url:string;
 }
-
