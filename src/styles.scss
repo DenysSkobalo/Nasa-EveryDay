@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Webfont: MacPawFixelDisplay-SemiBold */@font-face {
+  font-family: 'MacPawFixelDisplaySemiBold';
+  src: url('fonts/MacPawFixelDisplay-Regular.woff2') format('woff2'), /* Modern Browsers */
+  url('fonts/MacPawFixelDisplay-Regular.otf') format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "MacPaw Fixel Display Regular", sans-serif;
+}

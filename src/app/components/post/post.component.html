@@ -1,1 +1,28 @@
-<p>post works!</p>
+<!--Theme 1-->
+<!--<div *ngIf="nasaData" class="text-center mt-32">-->
+<!--  <h1 class="text-5xl">{{nasaData.title}}</h1>-->
+<!--  <p class="mt-4">{{nasaData.date | date}}</p>-->
+<!--  <p *ngIf="nasaData.copyright" class="text-left ml-2"><span class="font-bold">Author: </span>{{ nasaData.copyright }}</p>-->
+<!--  <p class="mt-4">{{nasaData.explanation}}</p>-->
+<!--    <img [src]="nasaData.hdurl"-->
+<!--    *ngIf="nasaData.media_type === 'image'"-->
+<!--         [alt]="nasaData.title"-->
+<!--         class="object-contain mt-3">-->
+<!--</div>-->
+
+
+<!--Theme 2-->
+<div *ngIf="nasaData" class="text-left mt-32 grid grid-cols-2">
+  <div class="mx-20 pt-4">
+    <h1 class="text-5xl">{{nasaData.title}}</h1>
+    <p class="mt-4">{{nasaData.date | date}}</p>
+    <p *ngIf="nasaData.copyright" class="text-left"><span class="font-bold">Author: </span>{{ nasaData.copyright }}</p>
+    <p class="mt-4">{{nasaData.explanation}}</p>
+  </div>
+  <div>
+    <img [src]="nasaData.hdurl"
+         *ngIf="nasaData.media_type === 'image'"
+         [alt]="nasaData.title"
+         class="object-contain rounded-xl mt-3">
+  </div>
+</div>

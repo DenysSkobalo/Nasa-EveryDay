@@ -10,6 +10,9 @@ import {PostComponent} from './components/post/post.component';
 import {ApplicationComponent} from './components/application/application.component';
 import {HowWorkComponent} from './components/how-work/how-work.component';
 import {ContactComponent} from './components/contact/contact.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import {ContactComponent} from './components/contact/contact.component';
     PostComponent,
     ApplicationComponent,
     HowWorkComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
