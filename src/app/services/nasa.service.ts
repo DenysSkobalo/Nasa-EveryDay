@@ -36,7 +36,8 @@ export class NasaService {
           );
         }
         return this.http.get(
-          `https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day}&api_key=${this.apiKey}`
+          // `https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day}&api_key=${this.apiKey}`
+            `https://api.nasa.gov/planetary/apod?date=2004-12-29&api_key=${this.apiKey}`
         );
       })
     );

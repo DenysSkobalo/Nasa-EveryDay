@@ -7,7 +7,7 @@ import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent} from './app.component';
 import {FormComponent} from './components/form/form.component';
-import {HeaderComponent} from './components/header/header.component';
+import {NavigationComponent} from './components/navigation/navigation.component';
 import {ModalComponent} from './components/modal/modal.component';
 import {PostComponent} from './components/post/post.component';
 import {ApplicationComponent} from './components/application/application.component';
@@ -21,7 +21,7 @@ import {FocusDirective} from "./directives/focus.directive";
   declarations: [
     AppComponent,
     FormComponent,
-    HeaderComponent,
+    NavigationComponent,
     ModalComponent,
     PostComponent,
     ApplicationComponent,
