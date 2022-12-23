@@ -26,6 +26,9 @@ body {
     background-color: var(--black);
     color: var(--white);
   }
+  span {
+    color: var(--black);
+  }
 }
 
 body.dark-theme {
@@ -34,6 +37,9 @@ body.dark-theme {
   button {
     background-color: var(--white);
     color: var(--black);
+  }
+  span {
+    color: var(--white);
   }
 }
 
