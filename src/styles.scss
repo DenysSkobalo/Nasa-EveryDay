@@ -1,9 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Webfont: MacPawFixelDisplay-SemiBold */@font-face {
+:root {
+  --black: #000;
+  --dark: #121212;
+  --white: #FFF;
+}
+
+/* Webfont: MacPawFixelDisplay-SemiBold */
+@font-face {
   font-family: 'MacPawFixelDisplaySemiBold';
   src: url('fonts/MacPawFixelDisplay-Regular.woff2') format('woff2'), /* Modern Browsers */
   url('fonts/MacPawFixelDisplay-Regular.otf') format('opentype'); /* Safari, Android, iOS */
@@ -14,4 +20,20 @@
 
 body {
   font-family: "MacPaw Fixel Display Regular", sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  button {
+    background-color: var(--black);
+    color: var(--white);
+  }
 }
+
+body.dark-theme {
+  background-color: var(--dark);
+  color: var(--white);
+  button {
+    background-color: var(--white);
+    color: var(--black);
+  }
+}
+

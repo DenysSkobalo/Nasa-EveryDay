@@ -5,4 +5,7 @@ import {Component} from '@angular/core';
   templateUrl: './navigation.component.html'
 })
 export class NavigationComponent {
+  public switchDarkTheme() {
+    document.body.classList.toggle('dark-theme');
+  }
 }
