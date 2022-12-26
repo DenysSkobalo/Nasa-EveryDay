@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NasaData} from "../../models/nasaData";
+
 import {ModalService} from "../../services/modal.service";
 import {NasaService} from "../../services/nasa.service";
 
@@ -19,7 +20,7 @@ export class ApplicationComponent {
 
   ngOnInit(): void {
     this.nasaDataService.getNasaData().subscribe((res) => {
-      console.log(res);
+      // console.log(res);
       this.nasaData = res;
     });
   }

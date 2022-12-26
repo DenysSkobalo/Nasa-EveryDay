@@ -24,10 +24,6 @@ export class NasaService {
   }
 
   getNasaData(): Observable<any> {
-    const year = new Date().getFullYear();
-    const month = new Date().getMonth() + 1;
-    const day = new Date().getDate();
-
     return this.selectedDateObservable.pipe(
       switchMap(() => {
         if (this.selectedDate.value) {
@@ -36,7 +32,6 @@ export class NasaService {
           );
         }
         return this.http.get(
-          // `https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day}&api_key=${this.apiKey}`
             `https://api.nasa.gov/planetary/apod?date=2004-12-29&api_key=${this.apiKey}`
         );
       })

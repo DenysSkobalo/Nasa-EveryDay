@@ -15,7 +15,7 @@ import {ContactComponent} from './components/contact/contact.component';
 import {HomeComponent} from './components/home/home.component';
 
 import {FocusDirective} from "./directives/focus.directive";
-import { DocsComponent } from './components/docs/docs.component';
+import {DocsComponent} from './components/docs/docs.component';
 
 @NgModule({
   declarations: [
@@ -39,4 +39,5 @@ import { DocsComponent } from './components/docs/docs.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
