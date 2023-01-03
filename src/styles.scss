@@ -26,10 +26,20 @@ body {
     background-color: var(--black);
     color: var(--white);
   }
-  span {
+
+  .nav-theme {
+    background-color: #f9fafb;
+  }
+  .nav-link-theme {
     color: var(--black);
   }
+
+  .menu-bg-theme {
+    background-color: #e5e7eb;
+  }
 }
+
+
 
 body.dark-theme {
   background-color: var(--dark);
@@ -38,8 +48,19 @@ body.dark-theme {
     background-color: var(--white);
     color: var(--black);
   }
-  span {
+
+  .nav-theme {
+    background-color: #333333;
+  }
+  .nav-link-theme {
     color: var(--white);
+  }
+
+  .menu-bg-theme {
+    background-color: #27272a;
+    .menu-font-color {
+      color: var(--white)
+    }
   }
 }
 

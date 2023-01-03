@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, HostBinding, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -8,4 +8,6 @@ export class NavigationComponent {
   public switchDarkTheme() {
     document.body.classList.toggle('dark-theme');
   }
+
+  public isVisibleMenu = false;
 }
