@@ -1,90 +1,71 @@
-<!--<nav class="flex items-center justify-between flex-wrap p-6">-->
-<!--  <a routerLink="/" class="flex items-center flex-no-shrink mr-6">-->
-<!--    <img src="../../../assets/NASA_logo.ico" alt="Nasa Logo">-->
-<!--    <span class="font-semibold text-xl tracking-tight">Everyday</span>-->
-<!--  </a>-->
-<!--  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">-->
-<!--    <div class="text-sm lg:flex-grow mt-1">-->
-<!--      <a routerLink="/app" class="block mt-4 lg:inline-block lg:mt-0 hover:font-bold mr-4">-->
-<!--        Application-->
-<!--      </a>-->
-<!--      <a routerLink="/docs" class="block mt-4 lg:inline-block lg:mt-0 hover:font-bold mr-4">-->
-<!--        Docs-->
-<!--      </a>-->
-<!--      <a routerLink="/contact" class="block mt-4 lg:inline-block lg:mt-0 hover:font-bold">-->
-<!--        Contact-->
-<!--      </a>-->
-<!--    </div>-->
-<!--    <label class="inline-flex relative items-center cursor-pointer">-->
-<!--      <input type="checkbox" class="sr-only peer" (click)="switchDarkTheme()" >-->
-<!--      <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>-->
-<!--      <span class="ml-3 text-sm font-medium text-gray-900">Switch Theme</span>-->
-<!--    </label>-->
-<!--  </div>-->
-<!--</nav>-->
-
-<nav class=" p-1.5 rounded-b-lg nav-theme">
+<nav class="p-1.5 rounded-b-lg nav-theme">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
     <a routerLink="/" class="flex items-center">
-      <img src="../../../assets/NASA_logo.ico" class="h-6 mr-3 sm:h-9" alt="Nasa Everyday Logo"/>
-      <span class="self-center text-xl font-semibold ">Everyday</span>
+      <img src="../../../assets/NASA_logo.ico" class="h-6 mr-1 sm:h-9" alt="Nasa Everyday Logo"/>
+      <span class="text-xl font-semibold">Everyday</span>
     </a>
-    <label class="md:hidden relative mr-36 items-center">
-      <input type="checkbox" class="sr-only peer" (click)="switchDarkTheme()">
-      <div
-        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-    </label>
     <button (click)="isVisibleMenu = !isVisibleMenu"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+            class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:bg-gray-600">
       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
+        <path
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z">
+        </path>
       </svg>
     </button>
 
-
+    <!-- Desktop Version -->
     <div class="hidden w-full md:block md:w-auto">
       <ul class="flex flex-col p-4 md:flex-row space-x-8 mt-0 text-sm font-bold items-center">
         <li>
           <a routerLink="/app"
-             class="block py-2 pl-3 pr-4 text-black hover:text-blue-700 md:p-0 nav-link-theme">Application</a>
+             class="text-black hover:text-blue-700 p-0 nav-link-theme">Application</a>
         </li>
         <li>
           <a routerLink="/docs"
-             class="block py-2 pl-3 pr-4 text-black hover:text-blue-700 md:p-0 nav-link-theme">Docs</a>
+             class="text-black hover:text-blue-700 p-0 nav-link-theme">Docs</a>
         </li>
         <li>
           <a routerLink="/contact"
-             class="block py-2 pl-3 pr-4 text-black hover:text-blue-700 md:p-0 nav-link-theme">Contact</a>
+             class="text-black hover:text-blue-700 p-0 nav-link-theme">Contact</a>
         </li>
         <label class="relative items-center cursor-pointer">
           <input type="checkbox" class="sr-only peer" (click)="switchDarkTheme()">
           <div
-            class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+            class="w-11 h-6 peer-focus:outline-none peer-focus:ring-4
+             rounded-full peer bg-gray-700 peer-checked:after:translate-x-full
+             peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px]
+             after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all
+             border-gray-600 peer-checked:bg-blue-600">
+          </div>
         </label>
       </ul>
     </div>
 
-
-    <div *ngIf="isVisibleMenu" class="w-full md:w-auto z-1">
+    <!-- Mobile Version -->
+    <div *ngIf="isVisibleMenu" class="md:hidden w-full absolute nav-theme top-12 right-0 px-2 pb-2">
       <ul
-        class="flex flex-col p-4 mt-4 rounded-lg menu-bg-theme">
+        class="flex flex-col mt-4 rounded-b-lg menu-bg-theme ">
+        <li>
+          <a class="flex items-center block py-2 pl-3 pr-4 text-black font-bold menu-font-color"
+             (click)="switchDarkTheme()">
+            Switch Theme
+          </a>
+        </li>
         <li>
           <a routerLink="/"
-             class="block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Home</a>
+             class="flex items-center block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Home</a>
         </li>
         <li>
           <a routerLink="/app"
-             class="block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Application</a>
+             class="flex items-center block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Application</a>
         </li>
         <li>
           <a routerLink="/docs"
-             class="block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Docs</a>
+             class="flex items-center block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Docs</a>
         </li>
         <li>
           <a routerLink="/contact"
-             class="block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Contact</a>
+             class="flex items-center block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Contact</a>
         </li>
       </ul>
     </div>

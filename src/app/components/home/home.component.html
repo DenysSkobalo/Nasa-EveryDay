@@ -1,16 +1,33 @@
-<header class="container mx-44">
+<header class="hidden md:w-full md:block md:container mx-44">
   <div class="mt-10 grid grid-cols-2 place-items-center">
     <div>
       <h1 class="text-6xl">Welcome!</h1>
-      <p class="mt-4 max-w-2xl text-2xl">Nasa every day is a service that will show an event from the archive on a certain day.</p>
+      <p class="mt-4 max-w-2xl text-2xl">Nasa every day is a service that will show an event from the archive on a
+        certain day.</p>
       <div class="mt-5">
         <button class="py-3 px-7 rounded" routerLink="/app">Get Started!</button>
         <a class="pt-10 ml-8 underline" routerLink="/docs">How does this service work?</a>
       </div>
     </div>
     <div>
-      <img class="rounded-full w-10/12" src="../../../assets/home-img.png" alt="The Astronaut">
+      <img src="../../../assets/home-img.png" alt="The Astronaut" class="w-10/12">
     </div>
   </div>
 </header>
 
+<header class="md:hidden w-full w-auto">
+  <div class="mt-5">
+    <img src="../../../assets/home-img.png" alt="The Astronaut" class="ml-16 w-9/12">
+  </div>
+
+  <div class="mt-5 text-center">
+    <h1 class="mt-4 text-5xl font-bold">Welcome!</h1>
+    <p class="mt-5">
+      Nasa every day is a service that will show an event from the archive on a certain day.
+    </p>
+    <button class="mt-5 py-3 px-32 rounded" routerLink="/app">Get Started!</button>
+    <div class="mt-5">
+      <a class="underline" routerLink="/docs">How it work?</a>
+    </div>
+  </div>
+</header>
