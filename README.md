@@ -2,7 +2,7 @@
 
 Is a service that can show you an article about what happened or what was discovered in our galaxy or on earth, on the day you chose.
 
-Link: https://nasa-every-day.web.app/
+Link: https://nasa-everyday-space.web.app/
 
 ## Development server
 
