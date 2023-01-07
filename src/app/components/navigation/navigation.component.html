@@ -43,14 +43,15 @@
 
     <!-- Mobile Version -->
     <div *ngIf="isVisibleMenu" class="md:hidden w-full absolute nav-theme top-12 right-0 px-2 pb-2">
+      <div class="mt-4 rounded-lg block-theme">
+        <a class="flex items-center block py-2 pl-3 pr-4 text-black font-bold menu-font-color"
+           (click)="switchDarkTheme()">
+          Switch Theme
+        </a>
+      </div>
       <ul
-        class="flex flex-col mt-4 rounded-b-lg menu-bg-theme ">
-        <li>
-          <a class="flex items-center block py-2 pl-3 pr-4 text-black font-bold menu-font-color"
-             (click)="switchDarkTheme()">
-            Switch Theme
-          </a>
-        </li>
+        class="flex flex-col mt-4 rounded-lg block-theme ">
+
         <li>
           <a routerLink="/"
              class="flex items-center block py-2 pl-3 pr-4 text-black font-bold menu-font-color">Home</a>

@@ -35,7 +35,7 @@ body {
     color: var(--black);
   }
 
-  .menu-bg-theme {
+  .block-theme {
     background-color: #e5e7eb;
   }
 }
@@ -57,11 +57,11 @@ body.dark-theme {
     color: var(--white);
   }
 
-  .menu-bg-theme {
+  .block-theme {
     background-color: #27272a;
-    .menu-font-color {
-      color: var(--white)
-    }
+  }
+  .menu-font-color {
+    color: var(--white)
   }
 }
 

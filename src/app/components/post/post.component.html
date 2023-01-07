@@ -1,14 +1,34 @@
-<div *ngIf="nasaData" class="text-left mt-32 grid grid-cols-2 mx-36 container">
-  <div class="mx-20 pt-4">
-    <h1 class="text-5xl">{{nasaData.title}}</h1>
-    <p class="mt-4">{{nasaData.date | date}}</p>
-    <p *ngIf="nasaData.copyright" class="text-left"><span class="font-bold">Author: </span>{{ nasaData.copyright }}</p>
-    <p class="mt-4">{{nasaData.explanation}}</p>
+<section class="hidden md:w-full md:block">
+  <div *ngIf="nasaData" class="text-left mt-32 grid grid-cols-2 mx-36 container">
+    <div class="mx-20 pt-4">
+      <h1 class="text-5xl">{{nasaData.title}}</h1>
+      <p class="mt-4">{{nasaData.date | date}}</p>
+      <p *ngIf="nasaData.copyright" class="text-left"><span class="font-bold">Author: </span>{{ nasaData.copyright }}
+      </p>
+      <p class="mt-4">{{nasaData.explanation}}</p>
+    </div>
+    <div>
+      <img [src]="nasaData.hdurl"
+           *ngIf="nasaData.media_type === 'image'"
+           [alt]="nasaData.title"
+           class="object-contain rounded-xl w-7/12">
+    </div>
   </div>
-  <div>
-    <img [src]="nasaData.hdurl"
-         *ngIf="nasaData.media_type === 'image'"
-         [alt]="nasaData.title"
-         class="object-contain rounded-xl w-7/12">
+</section>
+
+<section class="md:hidden">
+  <div *ngIf="nasaData">
+    <div class="px-3 py-4 block-theme mx-3 my-3 rounded-xl">
+      <h1 class="text-3xl font-semibold text-center mb-2">{{nasaData.title}}</h1>
+      <div class="">
+        <img [src]="nasaData.hdurl"
+             *ngIf="nasaData.media_type === 'image'"
+             [alt]="nasaData.title"
+             class="object-contain rounded-xl">
+      </div>
+      <p class="mt-4 text-center">{{nasaData.date | date}}</p>
+      <p *ngIf="nasaData.copyright"><span class="font-bold">Author: </span>{{ nasaData.copyright }}</p>
+      <p class="my-2 text-center">{{nasaData.explanation}}</p>
+    </div>
   </div>
-</div>
+</section>
